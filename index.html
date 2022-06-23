@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/947898070845247529/981559534239772713/logo1.png">
+    <link rel="stylesheet" href="./css/notes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/index.js" defer></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+
+</head>
+
+<body>
+    <div class="logo-area">
+        <a href="index.html">
+            <img src="./assests/logo1.png" alt="logo" class="logo" width="93px"></a>
+    </div>
+    <nav class="navbar">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Notes</a></li>
+            <li><a href="signup.html">Admission</a></li>
+        </ul>
+    </nav>
+    <div class="btns">
+        <button class="new-btn" id="add">
+            <i class="fas fa-plus"></i> New</button>
+    </div>
+    <div class="notes">
+        <div class="tools">
+            <label>
+                <input maxlength="15" type="text" value="Note name" class="input">
+            </label>
+            <button class="copy">
+                <i class="fa-solid fa-copy"></i>
+            </button>
+            <button class="edit">
+                <i class="fas fa-edit"></i>
+            </button>
+            <button class="delete">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+        <div class="main disabled"></div>
+        <textarea placeholder="Type your notes, wishes and your favirot story."></textarea>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+body {
+    background-image: linear-gradient(to right, rgba(23, 27, 53, 1), rgb(78, 85, 129));
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+.navbar {
+    margin: 0 auto;
+    width: 770px;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 50px 0 0;
+    list-style: none;
+    text-align: right;
+}
+
+.navbar ul li:nth-child(1) {
+    float: left;
+}
+
+.navbar ul li:nth-child(2) {
+    float: left;
+}
+
+.navbar ul li {
+    float: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navbar ul li a {
+    position: relative;
+    display: flex;
+    padding: 4px 5px;
+    font-family: Lato, sans-serif;
+    color: #ecf0f1;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.logo-area {
+    position: absolute;
+    left: 47%;
+    top: 15px;
+    content: "";
+
+}
+
+.navbar ul li a:hover {
+
+    color: #a088b1;
+    transition: all 0.5s ease;
+}
+
+ul li a::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform .3s;
+}
+
+ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+.notes {
+    margin: 25px auto;
+    border:2px dashed #f1ecf1A1;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    color: #f1ecf1;
+    border-radius: 5px;
+    font-family: 'Source Code Pro', monospace;
+    background: linear-gradient(to right,
+            rgb(160, 76, 156),
+            rgb(78, 85, 129));
+}
+
+.notes .tools {
+    background: linear-gradient(to right,
+    rgb(160, 76, 156),
+    rgb(78, 85, 129));
+    display: flex;
+    padding: 1rem;
+    border-radius: 0 5px 0 5px;
+    justify-content: flex-end;
+}
+
+.notes .tools button {
+    background-color: transparent;
+    color: #ffffffA1;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.1s ease;
+    margin-left: 0.9rem;
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffffA1;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.2rem;
+    resize: none;
+    position: relative;
+    left: 10px;
+    z-index: 999;
+}
+.emoji {
+    position: relative;
+    left: -35px;
+    cursor: pointer;
+}
+
+.notes .main {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.notes textarea {
+    outline: none;
+    height: 85%;
+    width: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.1rem;
+    padding: 1rem;
+    color: #fff;
+    background: linear-gradient(to top,
+            rgb(83, 31, 81, 0.5),
+            rgb(8, 13, 43, 0.5));
+}
+
+.containe-notes {
+
+    margin-top: 5%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.notes .disabled {
+    pointer-events: none;
+    opacity: 0.8;
+    color: #ffffffA1;
+}
+
+.new-btn {
+    background-color: transparent;
+    color: #ffffffA1;
+    border: 1px solid #ffffffa1;
+    border-radius: 50px;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    float: left;
+    transition: all 0.3s ease;
+
+}
+
+.new-btn:hover {
+    color: #ffffff;
+    border: 1px solid #ffffffA1;
+}
+
+.notes .tools .delete:hover {
+    color: #ff0000a1;
+}
+
+.notes .tools .copy:hover {
+    color: #32a727a1;
+}
+
+.notes .tools .edit:hover {
+    color: #ffd900;
+}
+
+.btns {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.deleted {
+    transition: all 0.4s ease;
+    opacity:0;
+    
+}
+
+.swal2-popup {
+    font-size: 1.1rem !important;
+    font-family: 'Source Code Pro ' , monospace;
+  }

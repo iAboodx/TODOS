@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/947898070845247529/981559534239772713/logo1.png">
+
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/signup.js" defer></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+</head>
+
+<body>
+    <div class="logo-area">
+        <a href="index.html">
+            <img src="./assests/logo1.png" alt="logo" class="logo" width="93px"></a>
+    </div>
+    <nav class="navbar">
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Notes</a></li>
+            <li><a href="signup.html">Admission</a></li>
+        </ul>
+    </nav>
+    <!-- create sign up form -->
+    <div class="signup-form">
+        <div class="form-header">
+            <h1>Discord Staff Application</h1>
+            <p>Please fill out this form to be a Discord Mod!</p>
+        </div>
+        <div class="form-body">
+            <div>
+                <div class="form-group">
+                    <label for="username">You Discord Tag</label>
+                    <input type="text" name="username" id="username" class="form-control" placeholder="Example: Abood#0000"
+                        >
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Discord ID</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Example: 555408669488185344" >
+                </div>
+                <div class="form-group">
+                    <label for="password">Reason</label>
+                    <input type="textarea" name="password" id="password" class="form-control"
+                        placeholder="Why you want to be a mod in our server" >
+                </div>
+
+                <div class="form-group">
+                    <button id="signup" name="signup-submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i>Submit</button>
+                </div>
+         
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
